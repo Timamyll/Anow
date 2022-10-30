@@ -1,0 +1,92 @@
+@import url(./modules/main.css);
+@import url(./modules/hamberger.css);
+@import url(./modules/design.css);
+@import url(./modules/about.css);
+@import url(./modules/creative.css);
+@import url(./modules/latest.css);
+@import url(./modules/buy.css);
+@import url('./modules/modern.css');
+@import url('./modules/meet.css');
+@import url('./modules/testi.css');
+@import url('./modules/planet.css');
+@import url('./modules/addres.css');
+@import url('./modules/footer.css');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* background: #E5E5E5; */
+    scroll-behavior: smooth;
+}
+
+.hr__page {}
+
+.hr__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+    padding-top: 60px;
+}
+
+.hr-hr {
+    width: 80px;
+    height: 80px;
+    background: rgba(253, 133, 88, 0.2);
+    border-radius: 40px;
+}
+
+.hr__lignh {
+    background: #F5F5F5;
+    border-radius: 0px;
+    width: 606px;
+    height: 2px;
+}
+
+@media (max-width: 1297px) {
+    .hr__lignh {
+        width: 345px;
+    }
+}
+
+@media (max-width: 732px) {
+    .hr__lignh {
+        width: 70px;
+    }
+}

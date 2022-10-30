@@ -1,0 +1,130 @@
+.hamburger {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 27px;
+    top: 34px;
+    z-index: 2000;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    display: block;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: all 0.4s;
+}
+
+.hamburger.hamburger-active {
+    display: flex;
+}
+
+.hamburger span:last-child {
+    margin-bottom: 0;
+}
+
+.hamburger.hamburger-active span:first-child {
+    transform: rotateZ(45deg) translateY(6px);
+}
+
+.hamburger.hamburger-active span:last-child {
+    transform: rotateZ(-45deg) translateY(-5px);
+}
+
+.hamburger.hamburger-active span:nth-child(2) {
+    display: none;
+}
+
+.menu__overlay {
+    display: block;
+    position: fixed;
+    left: -200%;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 0;
+    transition: all 1s;
+}
+
+.menu__phone {
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 1000;
+    padding: 40px;
+}
+
+.menu__phone>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff;
+}
+
+
+/* media */
+
+@media (max-width: 768px) {
+    .header__body {
+        flex-direction: column;
+    }
+    .header__body .header__menu ul {
+        margin-top: 25px;
+    }
+    .header__sing {
+        margin-top: 25px;
+    }
+    .menu__item {
+        display: none;
+    }
+    .sing__item-up {
+        margin-right: 0;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 426px) {
+    .header__sing {
+        display: flex;
+        gap: 20px;
+    }
+    .header__sing a {
+        padding: 10px;
+    }
+    @media (max-width: 320px) {
+        /* code */
+    }
+    @media (max-width: 325px) {
+        .menu__item {
+            flex-direction: column;
+        }
+        .header__logo-img {
+            margin-top: 14px;
+        }
+        .menu__overlay {
+            width: 100%;
+            height: 100%;
+        }
+        .menu__phone {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+.menu__overlay.menu-active {
+    /* display: block; */
+    left: 0;
+}
+
+@media (max-width: 465px) {
+    .menu__phone {
+        width: 60%;
+    }
+}

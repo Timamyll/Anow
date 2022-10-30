@@ -1,0 +1,139 @@
+.page__meet {
+    padding-top: 151px;
+}
+
+.container {}
+
+.meet__body {}
+
+.meet__box {}
+
+.meet__link {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 110% */
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FD8558;
+    margin-bottom: 30px;
+}
+
+.meet__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    /* identical to box height, or 130% */
+    text-align: center;
+    text-transform: capitalize;
+    color: #222222;
+    margin-bottom: 39px;
+}
+
+.meet__man {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.man__box {}
+
+.anna {
+    height: 467px;
+    background: no-repeat center / cover url(../../images/meet/01.png);
+}
+
+.man__name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-top: 196px;
+}
+
+.man__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 170% */
+    text-align: center;
+    color: #FCFCFC;
+}
+
+.andy {
+    height: 467px;
+    background: no-repeat center / cover url(../../images/meet/02.png)
+}
+
+.katy {
+    height: 467px;
+    background: no-repeat center / cover url(../../images/meet/03.png)
+}
+
+.margo {
+    height: 467px;
+    background: no-repeat center / cover url(../../images/meet/04.png)
+}
+
+.kanye {
+    height: 467px;
+    background: no-repeat center / cover url(../../images/meet/05.png)
+}
+
+.marta {
+    height: 467px;
+    background: no-repeat center / cover url(../../images/meet/06.png)
+}
+
+.meet__buttom {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.meet__bettoms {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height, or 200% */
+    color: #FFFFFF;
+    background: #FD8558;
+    border: 1px solid #FD8558;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 13px 37px;
+}
+
+.meet__bettoms:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media (max-width: 1360px) {
+    .meet__man {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .meet__man {
+        grid-template-columns: 1fr;
+    }
+    .page__meet {
+        padding-top: 0;
+    }
+}

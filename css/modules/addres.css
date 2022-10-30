@@ -1,0 +1,158 @@
+.page__addres {
+    padding-top: 115px;
+}
+
+.container {}
+
+.addres__body {}
+
+.addres__box {
+    display: flex;
+}
+
+.addres__list-items {
+    width: 50%;
+    gap: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addres__item {}
+
+.addres__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    letter-spacing: 2px;
+    color: rgba(34, 34, 34, 0.4);
+}
+
+.adress__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height, or 138% */
+    color: #222222;
+    max-width: 293px;
+}
+
+.addres__input {
+    width: 50%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addres__inputs {
+    display: flex;
+    gap: 30px;
+}
+
+.name__addres {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 338px;
+    height: 58px;
+}
+
+.addres__messadge {}
+
+.messadge__input {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 705px;
+    height: 128px;
+}
+
+.messadge__input::placeholder {
+    padding-left: 15px;
+}
+
+.addres__button {
+    justify-content: center;
+    display: flex;
+    margin-top: 65px;
+}
+
+.addres__buttoms {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    color: #FFFFFF;
+    padding: 17px 38px;
+    background: #FD8558;
+    border: 1px solid #FD8558;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.addres__buttoms:hover {
+    background: #FFFFFF;
+    color: #000;
+}
+
+.name__addres::placeholder {
+    padding-left: 15px;
+}
+
+@media (max-width: 1432px) {
+    .addres__box {
+        flex-direction: column;
+    }
+    .addres__list-items {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .adress__title {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .addres__input {
+        width: 100%;
+    }
+    .addres__inputs {
+        justify-content: center;
+    }
+    .addres__messadge {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .addres__list-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .adress__title {
+        margin-bottom: 0;
+    }
+    .page__addres {
+        padding-top: 0;
+    }
+    .addres__inputs {
+        margin-top: 30px;
+    }
+    .adress__title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .addres__inputs {
+        flex-direction: column;
+    }
+    .name__addres {
+        width: 100%;
+    }
+}

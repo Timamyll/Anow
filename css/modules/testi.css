@@ -1,0 +1,107 @@
+.page__testimonials {
+    padding-top: 115px;
+    height: 760px;
+    background: no-repeat center / cover url(../../images/testi/bg.png)
+}
+
+.container {}
+
+.testi__body {}
+
+.testi__header {}
+
+.testi__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 220px;
+    /* identical to box height, or 110% */
+    text-align: center;
+    color: rgba(170, 170, 170, 0.1);
+    padding-top: 70px;
+}
+
+.testi__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testi__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    /* or 160% */
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-bottom: 44px;
+    margin-top: 44px;
+    max-width: 824px;
+}
+
+.testi__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.testi__img {}
+
+.testi__name-name {}
+
+.name__testis {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 160% */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.testi__testi {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    /* identical to box height, or 172% */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1030px) {
+    .testi__title {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 620px) {
+    .testi__title {
+        font-size: 80px;
+    }
+    .testi__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 447px) {
+    .testi__title {
+        font-size: 40px;
+        line-height: 120px;
+        padding-top: 0;
+    }
+    .testi__text {
+        margin-top: 0;
+    }
+    .page__testimonials {
+        height: 552px;
+        padding-top: 0;
+    }
+}
