@@ -36,7 +36,7 @@
     line-height: 38px;
     /* or 120% */
     color: #222222;
-    max-width: 388px;
+    /* max-width: 388px; */
 }
 
 .modern__text {
@@ -72,9 +72,12 @@
     height: 10px;
     background: linear-gradient(90deg, #FF4B05 0%, #FFAE35 72.59%);
     display: block;
+    width: 0;
+    transition: all 0.5s ease-in-out;
 }
 
-.modern__section:first-child .modern__ilis span {
+
+/* .modern__section:first-child .modern__ilis span {
     width: 90%;
 }
 
@@ -84,7 +87,7 @@
 
 .modern__section:nth-child(3) .modern__ilis span {
     width: 95%;
-}
+} */
 
 @media (max-width: 773px) {
     .modern__body {

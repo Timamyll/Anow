@@ -58,6 +58,7 @@
     border: 1px solid #EEEEEE;
     width: 338px;
     height: 58px;
+    padding-left: 20px;
 }
 
 .addres__messadge {}
@@ -67,6 +68,7 @@
     border: 1px solid #EEEEEE;
     width: 705px;
     height: 128px;
+    padding-left: 20px;
 }
 
 .messadge__input::placeholder {
